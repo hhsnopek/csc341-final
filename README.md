@@ -54,3 +54,17 @@ In some circles sleep deprivation has become a status symbol.  Statements like "
 - Henry Snopek
 - Lan Hoang Le
 - Ben Haos
+
+## How to Contribute
+To contribute to the repo you must first have [git](http://git-scm.com/). Download [here](http://eclipse.github.io/) or search within the eclipse market store for [JGit](http://www.eclipse.org/jgit/download/).
+
+If you'd rather learn to use git from command line checkout this [tutorial](https://try.github.io/levels/1/challenges/1).
+
+### What is git?
+> "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency." - [git-scm.com](http://git-scm.com)
+
+### Why use git?
+Git allows us as programmers to keep track of all our changes, review changes, and maintain standards. Git is one of many version control tools like svn. A majority of jobs today use some sort of version control, and almost all today use git.
+
+## To inspire us!
+![fluffy puppy](http://cl.ly/XvJZ/puppy-fluffy.jpg)
