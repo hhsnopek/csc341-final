@@ -1,7 +1,10 @@
+package assign10v1i1;
+
+import java.util.LinkedList;
 
 public class Clock {
-  private GerogianCalendar Time = new GerogianCalendar();
-  Queue<Event> Events = new Queue<Event>();
+	//TODO private GerogianCalendar Time = new GerogianCalendar();
+  LinkedList<Event> Events = new LinkedList<Event>();
 
   // To Wake up
   public void addAlarm(Event event) {
@@ -36,7 +39,7 @@ public class Clock {
   // update Time
   private void iterate() {
     while (true) {
-      Time.update();
+      //TODO Time.update();
     }
   }
 
