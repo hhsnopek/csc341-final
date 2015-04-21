@@ -43,14 +43,12 @@ If you want to learn more about the [Date() class](http://www.tutorialspoint.com
 In some circles sleep deprivation has become a status symbol.  Statements like "I pulled another all-nighter" and "I've slept only three hours in the last two days" are shared with pride, as listeners nod in admiration.  Although celebrating self-deprivation has historical roots and is not likely to go away soon, it's troubling when an educated culture rewards people for hurting themselves, and that includes missing sleep.  As Stanford sleep experts have stated, sleep deprivation is one of the leading health problems in the modern world.  People with high levels of sleep debt get sick more often, have more difficulties in personal relationships, and are less productive and creative. The negative effects of sleep debt go on and on.  In short, when you have too much sleep debt, you simply can't enjoy life fully.
 
 ## Presentation Guidelines:
-1. You have (up to) 10 minutes to present.
+1. You have (up to) 10 minutes to present. - [Powerpoint](https://docs.google.com/presentation/d/11bERRui8qS1NnJZFrYYtM7mERI8ZxbAg1YJXiW9apxU/edit?usp=sharing)
 2. Present design artifacts (see requirements (2), (3), and (4)) in an order that can best describe your design thoughts / thought process
 3. Any design issues you ran into, and whether you've resolved the issues?
 4. Make sure that the diagrams are readable
 
 ## Contributors
-- Jacob Miller
-- Ethan Urban
 - Henry Snopek
 - Lan Hoang Le
 - Ben Haos
