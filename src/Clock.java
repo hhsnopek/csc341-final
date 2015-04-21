@@ -1,8 +1,10 @@
 
 public class Clock {
+  private GerogianCalendar Time = new GerogianCalendar();
+  Queue<Event> Events = new Queue<Event>();
 
   // To Wake up
-  public void setAlarm(Time time) {
+  public void addEvent(Event event) {
 
   }
 
@@ -24,6 +26,13 @@ public class Clock {
   // Notify person after 3 red alerts (Event)
   public void notify(String msg) {
 
+  }
+
+  // update Time
+  private void iterate() {
+    while (true) {
+      Time.update();
+    }
   }
 
 }
