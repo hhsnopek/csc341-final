@@ -4,12 +4,17 @@ public class Clock {
   Queue<Event> Events = new Queue<Event>();
 
   // To Wake up
-  public void addEvent(Event event) {
-
+  public void addAlarm(Event event) {
+    addListener(event);
   }
 
   // To Sleep
-  public void setReminder(Time time) {
+  public void addReminder(Event event) {
+    addListener(event);
+  }
+
+  // add's listener to Time
+  private void addListener(Event event) {
 
   }
 
@@ -17,7 +22,7 @@ public class Clock {
   // used to record time before sleeping
   // on wake up & if it was from an alarm or not
   public void record(String msg) {
-
+    // send POST request with event + timestamp
   }
 
   // notify when or need to sleep
