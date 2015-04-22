@@ -1,6 +1,6 @@
-package assign10v1i1;
+package assign10v1i2;
 
-// Event 
+//TODO Event 
 class Event {
 	//TODO public Event(TimeStamp time) {
 	//TODO  Method body
