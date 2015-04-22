@@ -1,4 +1,4 @@
-package asg10v1;
+package superAlarmClock;
 
 import java.text.DateFormat;
 import java.util.Date;
