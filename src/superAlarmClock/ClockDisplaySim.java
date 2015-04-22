@@ -14,7 +14,6 @@ public class ClockDisplaySim {
 	private ClockController clockController;
 
 	public ClockDisplaySim() {
-
 	}
 
 	public void runSim(int numDaysToSim, int timeStepsInMilliSec) {
@@ -56,7 +55,7 @@ public class ClockDisplaySim {
 		String s1 = df1.format(dateToFormat);
 		String s2 = df2.format(dateToFormat);
 
-		return String.format("%s %9s", s1, s2);;
+		return String.format("%s %9s", s1, s2);
 	}
 
 	public void ShutOffAlarm() {

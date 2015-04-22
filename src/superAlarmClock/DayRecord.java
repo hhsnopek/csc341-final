@@ -2,19 +2,39 @@ package superAlarmClock;
 
 import java.text.DateFormat;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.LinkedList;
 
 public class DayRecord {
 
 	private Date wakeTimeRecomended;
 	private Date sleepTimeRecomended;
+	
 	private Date dayRecordDate;
+
 	private Date toggleWakeSleepTime;
-	private LinkedList useOfRecordList;
+
+	private HashMap<Date, String> useOfRecordList;
+
 	private LinkedList<Date>  additionalAlarmTime;
 	private ClockController clockController;
 
+	public DayRecord(){
+		useOfRecordList = new HashMap<Date, String>();
+		useOfRecordList.put(getCurrentDateTime(), "RecordCreated");
+	}
+
+	private void trackUse(String actionTracked){
+		useOfRecordList.put(getCurrentDateTime(), actionTracked);
+	}
+	
+	private Date getCurrentDateTime(){
+		Date returnDate = new Date();
+		return returnDate;
+	}
+	
 	private String simpleTimeString(Date dateToFormat) {
+		
 		DateFormat df1 = DateFormat.getDateInstance(DateFormat.SHORT);
 		DateFormat df2 = DateFormat.getTimeInstance(DateFormat.SHORT);
 
@@ -56,14 +76,14 @@ public class DayRecord {
 		this.toggleWakeSleepTime = toggleWakeSleepTime;
 	}
 
-	public LinkedList getUseOfRecordList() {
+	public HashMap<Date, String> getUseOfRecordList() {
 		return useOfRecordList;
 	}
 
-	public void setUseOfRecordList(LinkedList useOfRecordList) {
+	public void setUseOfRecordList(HashMap<Date, String> useOfRecordList) {
 		this.useOfRecordList = useOfRecordList;
 	}
-
+	
 	public LinkedList<Date> getAdditionalAlarmTime() {
 		return additionalAlarmTime;
 	}
