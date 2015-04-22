@@ -23,4 +23,60 @@ public class DayRecord {
 
 		return String.format("%s %9s", s1, s2);
 	}
+
+	public Date getWakeTimeRecomended() {
+		return wakeTimeRecomended;
+	}
+
+	public void setWakeTimeRecomended(Date wakeTimeRecomended) {
+		this.wakeTimeRecomended = wakeTimeRecomended;
+	}
+
+	public Date getSleepTimeRecomended() {
+		return sleepTimeRecomended;
+	}
+
+	public void setSleepTimeRecomended(Date sleepTimeRecomended) {
+		this.sleepTimeRecomended = sleepTimeRecomended;
+	}
+
+	public Date getDayRecordDate() {
+		return dayRecordDate;
+	}
+
+	public void setDayRecordDate(Date dayRecordDate) {
+		this.dayRecordDate = dayRecordDate;
+	}
+
+	public Date getToggleWakeSleepTime() {
+		return toggleWakeSleepTime;
+	}
+
+	public void setToggleWakeSleepTime(Date toggleWakeSleepTime) {
+		this.toggleWakeSleepTime = toggleWakeSleepTime;
+	}
+
+	public LinkedList getUseOfRecordList() {
+		return useOfRecordList;
+	}
+
+	public void setUseOfRecordList(LinkedList useOfRecordList) {
+		this.useOfRecordList = useOfRecordList;
+	}
+
+	public LinkedList<Date> getAdditionalAlarmTime() {
+		return additionalAlarmTime;
+	}
+
+	public void setAdditionalAlarmTime(LinkedList<Date> additionalAlarmTime) {
+		this.additionalAlarmTime = additionalAlarmTime;
+	}
+
+	public ClockController getClockController() {
+		return clockController;
+	}
+
+	public void setClockController(ClockController clockController) {
+		this.clockController = clockController;
+	}
 }
