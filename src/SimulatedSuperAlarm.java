@@ -1,4 +1,4 @@
-package asg10v1i3;
+package asg10v1;
 
 import java.text.DateFormat;
 import java.util.Date;
