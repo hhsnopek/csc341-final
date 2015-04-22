@@ -18,5 +18,9 @@ https://docs.google.com/presentation/d/11bERRui8qS1NnJZFrYYtM7mERI8ZxbAg1YJXiW9a
 GitHub Repository for Task:
 https://github.com/hhsnopek/csc341-final
 
+Tools:
+docx to markdown - http://word-to-markdown.herokuapp.com/
+markdown viewer - http://dillinger.io/
+
 Concern:
 http://www.theguardian.com/technology/2013/jan/25/github-search-security-warning
