@@ -1,4 +1,4 @@
-package testing;
+package superAlarmClock;
 public class ClockController {
 
 	private DayRecord currentSchedule;
