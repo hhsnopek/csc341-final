@@ -23,6 +23,10 @@ public class DayRecord {
 		useOfRecordList = new HashMap<Date, String>();
 		useOfRecordList.put(getCurrentDateTime(), "RecordCreated");
 	}
+
+	private void trackUse(String actionTracked){
+		useOfRecordList.put(getCurrentDateTime(), actionTracked);
+	}
 	
 	private Date getCurrentDateTime(){
 		Date returnDate = new Date();
@@ -79,7 +83,7 @@ public class DayRecord {
 	public void setUseOfRecordList(HashMap<Date, String> useOfRecordList) {
 		this.useOfRecordList = useOfRecordList;
 	}
-
+	
 	public LinkedList<Date> getAdditionalAlarmTime() {
 		return additionalAlarmTime;
 	}
