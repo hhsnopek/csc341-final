@@ -72,11 +72,11 @@ public class DayRecord {
 		this.toggleWakeSleepTime = toggleWakeSleepTime;
 	}
 
-	public LinkedList getUseOfRecordList() {
+	public HashMap<Date, String> getUseOfRecordList() {
 		return useOfRecordList;
 	}
 
-	public void setUseOfRecordList(LinkedList useOfRecordList) {
+	public void setUseOfRecordList(HashMap<Date, String> useOfRecordList) {
 		this.useOfRecordList = useOfRecordList;
 	}
 
