@@ -14,7 +14,6 @@ public class ClockDisplaySim {
 	private ClockController clockController;
 
 	public ClockDisplaySim() {
-
 	}
 
 	public void runSim(int numDaysToSim, int timeStepsInMilliSec) {
