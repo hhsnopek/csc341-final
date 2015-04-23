@@ -10,4 +10,9 @@ public class Records {
   public void add(Record record) {
 
   }
+
+  // clears records after POST to db/server
+  public void clear() {
+
+  }
 }
