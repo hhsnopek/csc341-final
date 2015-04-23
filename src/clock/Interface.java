@@ -1,7 +1,5 @@
 package clock;
 
-import Controller;
-
 public class Interface {
 
   public void setAlarm(Date date) {
