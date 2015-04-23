@@ -15,13 +15,13 @@ class Button {
 
     switch (name) {
       case "set": {
-        // toggle style
+        // interaction start
       }
       case "sleep": {
         // toggle style
       }
-      case "on/off": {
-        // toggle style
+      case "alarmOff": {
+        // clicker
       }
     }
   }
