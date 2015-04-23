@@ -1,21 +1,37 @@
-Use Case One
-User sets an alarm to wake
-Alarm goes off
-User turns off alarm
+# Use Cases
+1.
 
-Use Case Two
-User sets an alarm to sleep
-Alarm goes off
-User turns off alarm
+```
+  User sets an alarm to wake
+  Alarm goes off
+  User turns off alarm
+```
 
-Use Case Three
-User Request Data
-Clock Delivers Data in machine readable form
+2.
 
-Use Case Four
-Researcher Request Data
-Clock Delivers Data in machine readable form
+```
+  User sets an alarm to sleep
+  Alarm goes off
+  User turns off alarm
+```
 
-Use Case Five
-User misses Fails to shut off alarm for three sleep/wake cycles
-User's emergency contact is contacted
+3.
+
+```
+  User Request Data
+  Clock Delivers Data in machine readable form
+```
+
+4.
+
+```
+  Researcher Request Data
+  Clock Delivers Data in machine readable form
+```
+
+5.
+
+```
+  User misses Fails to shut off alarm for three sleep/wake cycles
+  User's emergency contact is contacted
+```
