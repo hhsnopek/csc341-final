@@ -3,11 +3,11 @@ package clock;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import event.Event;
-import event.SortedList;
+import event.EventList;
 
 // Controller
 public class Timeline {
-	SortedList<Event> events = new SortedList<Event>();
+	EventList<Event> events = new EventList<Event>();
 
 
 	public Timeline() {
@@ -16,6 +16,7 @@ public class Timeline {
 			//	- add events to timeline
 			//	- timeline is a loop with the GregorianCalendar updates, everytime
 			//		it updates it will check the top event
+			//	- once event occurs it will be removed from the timeline
 
 	}
 
