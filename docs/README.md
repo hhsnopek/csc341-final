@@ -22,6 +22,8 @@
   - [SleepReport](#SleepReport)
 
 ## [clock](../src/clock) <a id="clock"></a>
+UML: ![clock uml](uml/clock.png)
+
 ### [Timeline](../src/clock/Timeline.java) <a id="Timeline"></a>
 `clock.Timeline` is where the clock is initialized, counts, and holds all upcoming events. Think of the `Timeline` as a real timeline, only [events](#event): [`event.Alarm`](#Alarm), [`event.Alert`](#Alert), & [`event.Reminder`](#Reminder) are added to the timeline. After an event is triggered it is removed from the timeline, unless the event has specified to reoccur.
 
@@ -37,6 +39,8 @@ Event                                                   Alarm                   
 
 ## [event](../src/event) <a id="event"></a>
 The event package contains all the events: [`Alarm`](#Alarm), [`Alert`](#Alert), & [`Reminder`](#Reminder); which can be added to [clock.Timeline](#Timeline). To create a new event, create the [EventFactory](#EventFactory) and specify the event you'd like to create.
+
+UML: ![event uml](uml/event.png)
 
 ### [Event](../src/event/Event.java) <a id="Event"></a>
 This is the interface that is used to create [`Alarm`](#Alarm), [`Alert`](#Alert), & [`Reminder`](#Reminder). Each Event will have a trigger that sends out an `ActionEvent`. This allows your interface to listen to the timeline events. If you're to create your own event it must trigger an `ActionEvent`. The recommended practice is to add your event before it is suppose to be triggered. You may, but not suggested, call the `ActionEvent`'s separate from the event. The action will still be recorded in [`record.Records`](#Records)
@@ -62,6 +66,8 @@ This is the third of the default events, this triggers the `Ring` event. You mus
 
 ## [record](../src/record) <a id="record"></a>
 The record package holds the all the "events" that take place during the clock. These events are different from `clock.Timeline` & `event.Event` events. The recorded events should be any `ActionEvent`'s, User, Clock, and API/Server interaction.
+
+UML: ![record uml](uml/record.png)
 
 ### [Record](../src/record/Record.java) <a id="Record"></a>
 The record holds any events that take place during the clocks duration of being active. As stated before this includes any `ActionEvent`'s, User, Clock, and API/Server interaction. Record takes three parameters: `Date time`, `String entity`, & `String action`. See example below for what to specify within the `Action`.
@@ -100,6 +106,8 @@ Time  - Entity, Action
 
 ## [report](../src/report)
 The report package contains everything you'll need to generate and build reports that are requested from the User. The Assumption here is that the Researchers have their own way of generating reports that are specific for themselves. This package only contains reports for the User.
+
+UML: ![report uml](uml/report.png)
 
 ### [Report](../src/report/Report.java)
 This is the interface that you can use to build custom reports. You must have  `build():void` and `toString():String` methods. When a report is created it must trigger an `ActionEvent` and called `Generating Report [reportName]`. Within your report you must request all data from the researchers, as all `records` are stored on their side.
