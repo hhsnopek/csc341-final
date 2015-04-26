@@ -16,6 +16,11 @@
   - [Record](#Record)
   - [Records](#Records)
 
+- [report](#report)
+  - [Report](#Report)
+  - [ReportFactory](#ReportFactory)
+  - [SleepReport](#SleepReport)
+
 ## [clock](../src/clock) <a id="clock"></a>
 ### [Timeline](../src/clock/Timeline.java) <a id="Timeline"></a>
 `clock.Timeline` is where the clock is initialized, counts, and holds all upcoming events. Think of the `Timeline` as a real timeline, only [events](#event): [`event.Alarm`](#Alarm), [`event.Alert`](#Alert), & [`event.Reminder`](#Reminder) are added to the timeline. After an event is triggered it is removed from the timeline, unless the event has specified to reoccur.
@@ -92,3 +97,15 @@ Time  - Entity, Action
 8:01  - User,    Stops Alarm
 ...
 ```
+
+## [report](../src/report)
+The report package contains everything you'll need to generate and build reports that are requested from the User. The Assumption here is that the Researchers have their own way of generating reports that are specific for themselves. This package only contains reports for the User.
+
+### [Report](../src/report/Report.java)
+This is the interface that you can use to build custom reports. You must have  `build():void` and `toString():String` methods. When a report is created it must trigger an `ActionEvent` and called `Generating Report [reportName]`. Within your report you must request all data from the researchers, as all `records` are stored on their side.
+
+### [ReportFactory](../src/report/ReportFactory.java)
+This is where you'll request all your reports that you'd like to be created. It is preferred when adding custom reports to extend this class.
+
+### [SleepReport](../src/report/SleepReport.java)
+This is the only default report that is provided. This will grab all the sleeping data: `Sleep Time`, `Alerts to Sleep`, `Wake up Alarms`, `Wake up Time`, and a bunch more information.
