@@ -4,6 +4,9 @@ Henry Snopek</br>csc341</br>4/30/2015
 ## Overview
 Which this assignment I ended up using the MVC pattern which is Event-Based. It is similar to to the Observer pattern but rather we can easily just interact in-between actions using ActionEvents. This project started out as a two person project which later split due to difference ways to accomplish the final design. Please see the documentation below for more information regarding usage.
 
+## Documentation
+see [`/docs`](/docs) for all documentation
+
 ## Details
 In this assignment, you are to design (but not fully implement) a "super alarm clock" for University students to help them to manage their own sleep patterns, and also to provide data to support a research project into the extent of the problem in this community.  You may assume that the data you collect is to be stored in a database and is retrievable from the database as well.  There might be a mobile application to be developed at a later time to establish an interface with the functionality you develop in this assignment.
 
